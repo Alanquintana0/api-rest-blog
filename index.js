@@ -19,7 +19,9 @@ const port = 3900;
 app.use(cors());
 
 //make a body an JS object
+//Express handle for json objects
 app.use(express.json())
+//Express handle for form data
 app.use(express.urlencoded({extended:true}));
 
 //define routes
